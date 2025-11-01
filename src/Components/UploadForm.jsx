@@ -4,7 +4,7 @@ import { IoDocumentTextOutline } from "react-icons/io5";
 
 const UploadForm = () => {
   return (
-    <div className=" mt-2 mx-1.5 md:m-3  lg:mx-18 lg:mt-4">
+    <div className="mt-2 mx-auto max-w-4xl px-2 md:px-4 lg:px-8">
       <div className="h-auto">
         {/* heading */}
         <div className="py-1.5 sm:py-2.5 lg:py-3 flex flex-col justify-center items-center ">
@@ -22,7 +22,10 @@ const UploadForm = () => {
           </p>
         </div>
         {/* form */}
-        <form className="flex flex-col rounded-lg border border-gray-200 justify-start items-start px-2.5 pt-3 sm:px-5 lg:px-14 lg:py-6 sm:py-5 py-3 font-[Outfit] space-y-3.5">
+        <form
+          className="flex flex-col rounded-lg border border-gray-200 justify-start items-start px-2.5 pt-3 sm:px-5 lg:px-14 lg:py-6 sm:py-5 py-3 font-[Outfit] space-y-3 sm:space-y-4 lg:space-y-5
+"
+        >
           <div className=" w-full flex flex-col justify-start items-start space-y-2.5">
             <label
               htmlFor="name"
@@ -81,8 +84,12 @@ const UploadForm = () => {
               className="bg-[#f3f3f5] border border-gray-300 text-sm sm:text-base lg:text-lg rounded-lg block w-full h-[120px] p-2.5 placeholder:text-[13px] resize-none leading-tight lg:placeholder:text-base sm:placeholder:text-sm"
             ></textarea>
           </div>
+          {/* file upload */}
           <div className="w-full flex flex-col justify-center items-center space-y-2.5">
-            <div className="bg-[#f3f3f5] flex justify-center items-center rounded-lg border border-dashed border-blue-400 px-6 py-5 lg:py-8 w-full">
+            <div
+              className="bg-[#f3f3f5] flex justify-center items-center rounded-lg border border-dashed border-blue-400 px-4 py-4 sm:px-6 sm:py-5 lg:py-8
+ w-full"
+            >
               <div className="flex flex-col justify-center items-center text-center">
                 <div className="flex  justify-center items-center border border-blue-300 text-blue-400 w-[45px] h-[45px] lg:w-[50px] lg:h-[50px] rounded-lg bg-[#FDCFFA]">
                   <MdOutlineFileUpload className="text-2xl lg:text-3xl" />
