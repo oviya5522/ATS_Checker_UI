@@ -1,10 +1,9 @@
-import React from "react";
 import { MdOutlineFileUpload } from "react-icons/md";
 import { IoDocumentTextOutline } from "react-icons/io5";
 
 const UploadForm = () => {
   return (
-    <div className="mt-2 mx-auto max-w-4xl px-2 md:px-4 lg:px-8">
+    <div className="mt-2 mx-auto max-w-6xl px-2 md:px-4 lg:px-8">
       <div className="h-auto">
         {/* heading */}
         <div className="py-1.5 sm:py-2.5 lg:py-3 flex flex-col justify-center items-center ">
@@ -22,9 +21,9 @@ const UploadForm = () => {
           </p>
         </div>
         {/* form */}
+        <div className='lg:px-12 md:px-9 xl:px-3 max-w-[1200px] mx-auto w-full'>
         <form
-          className="flex flex-col rounded-lg border border-gray-200 justify-start items-start px-2.5 pt-3 sm:px-5 lg:px-14 lg:py-6 sm:py-5 py-3 font-[Outfit] space-y-3 sm:space-y-4 lg:space-y-5
-"
+          className="flex flex-col rounded-lg border border-gray-200 justify-start items-start px-2.5 pt-3 sm:px-5 lg:px-5 lg:py-6 sm:py-5 py-3 font-[Outfit] space-y-3 sm:space-y-4 lg:space-y-5"
         >
           <div className=" w-full flex flex-col justify-start items-start space-y-2.5">
             <label
@@ -132,6 +131,7 @@ const UploadForm = () => {
             Check ATS Score
           </button>
         </form>
+        </div>
       </div>
     </div>
   );
